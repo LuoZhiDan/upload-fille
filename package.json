@@ -1,0 +1,34 @@
+{
+  "name": "upload-fille",
+  "version": "1.0.0",
+  "description": "实现上传文件",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuoZhiDan/upload-fille.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^1.0.0",
+    "expose-loader": "^0.7.5",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "bugs": {
+    "url": "https://github.com/LuoZhiDan/upload-fille/issues"
+  },
+  "homepage": "https://github.com/LuoZhiDan/upload-fille#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11"
+  }
+}

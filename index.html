@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>page title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="http://10.0.3.114:7000/libs/jquery.js"></script> -->
+    <!-- <script src="http://10.0.3.114:7000/libs/d3.js"></script> -->
+    <!-- <script src="http://10.0.3.114:7000/libs/tbase.js"></script> -->
+    <!-- <script src="http://10.0.3.114:7000/libs/echarts-all.js"></script> -->
+    <!-- <script src="http://10.0.3.114:7000/libs/require.js"></script> -->
+    <style>
+        html {
+            width: 100%;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background: #ffffff;
+            width: 100%;
+            height: 100%;
+        }
+
+        div#container {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            /* background: #232323; */
+            margin: 0;
+            position: relative;
+            background-size: 100% 100%;
+        }
+        div#box{
+            display: inline;
+        }
+
+
+        #box:hover .cls-2{
+            fill: #340ef0;
+        }
+
+        #box:hover .cls-1{
+            stroke: #340ef0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form method="POST" action="/upload" enctype="multipart/form-data" id="upload">
+            <div>
+                <div id="box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150.656" height="150" viewBox="0 0 150.656 150">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                              fill: #fff;
+                              stroke: #ddd;
+                              stroke-width: 1px;
+                            }
+                            .cls-2 {
+                              fill: #a8b3ba;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <rect class="cls-1" x="0.156" width="150" height="150" rx="2" ry="2" />
+                        <path class="cls-2" d="M41,74h68v2H41V74ZM74,41h2v68H74V41Z" />
+                    </svg>
+                </div>
+            </div>
+            <input name="filename" type="file" multiple hidden id="file"/>
+            <button type="button" id="submit">Upload</button>
+        </form>
+        <progress value="0" max="1" id="progress"></progress>
+    </div>
+</body>
+
+</html>
